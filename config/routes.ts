@@ -36,6 +36,24 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/todolist',
+		name: 'ToDoList',
+		component: './ToDoList',
+		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/ramdomnumber',
+		name: 'RandomNumber',
+		component: './RandomNumber',
+		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/quanlyhoctap',
+		name: 'QuanLyHocTap',
+		component: './QuanLyHocTap',
+		icon: 'ArrowsAltOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {
