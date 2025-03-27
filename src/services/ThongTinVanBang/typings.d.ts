@@ -9,6 +9,7 @@ declare module ThongTinVanBang {
     options?: { label: string; value: any }[];
     min?: number;
     max?: number;
+    rules?: { required: boolean; message?: string }[];
   }
 
   interface Record {
@@ -19,5 +20,6 @@ declare module ThongTinVanBang {
     ngaySinh: string;
     quyetDinhTotNghiep: string;
     [key: string]: any; // For dynamic fields
+    
   }
 }

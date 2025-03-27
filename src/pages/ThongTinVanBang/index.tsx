@@ -5,7 +5,7 @@ import type { IColumn } from '@/components/Table/typing';
 import FormThongTinVanBang from './Form';
 
 const ThongTinVanBang = () => {
-  const { data, getData, setRow, isEdit, setVisible, setIsEdit, visible } = useModel('thongTinVAnBang');
+  const { data, getData, setRow, isEdit, setVisible, setIsEdit, visible } = useModel('thongTinVanBang');
 
   useEffect(() => {
     getData();

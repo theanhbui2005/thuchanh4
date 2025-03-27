@@ -1,14 +1,6 @@
 import { useState } from 'react';
 
-interface ModelState {
-  data: ThongTinVanBang.Record[];
-  visible: boolean;
-  isEdit: boolean;
-  row?: ThongTinVanBang.Record;
-  formFields: ThongTinVanBang.FormField[];
-}
-
-const defaultFields: ThongTinVanBang.FormField[] = [
+export const defaultFields: ThongTinVanBang.FormField[] = [
   {
     name: 'diemTrungBinh',
     type: 'number',
@@ -58,7 +50,13 @@ export default () => {
   const [visible, setVisible] = useState<boolean>(false);
   const [isEdit, setIsEdit] = useState<boolean>(false);
   const [row, setRow] = useState<ThongTinVanBang.Record>();
-  const formFields = defaultFields;
+
+  const getData = () => {
+    const savedData = localStorage.getItem('thongTinVanBang');
+    if (savedData) {
+      setData(JSON.parse(savedData));
+    }
+  };
 
   const getNextSoVaoSo = () => {
     if (!data.length) return '0001';
@@ -71,13 +69,6 @@ export default () => {
     setData(newData);
   };
 
-  const getData = () => {
-    const savedData = localStorage.getItem('thongTinVanBang');
-    if (savedData) {
-      setData(JSON.parse(savedData));
-    }
-  };
-
   return {
     data,
     visible,
@@ -86,9 +77,10 @@ export default () => {
     setRow,
     isEdit,
     setIsEdit,
-    formFields,
+    setData,
+    getData,
     getNextSoVaoSo,
     saveData,
-    getData
+    formFields: defaultFields
   };
 };

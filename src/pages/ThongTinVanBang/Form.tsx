@@ -2,6 +2,17 @@ import MyDatePicker from '@/components/MyDatePicker';
 import { Button, Form, Input, InputNumber, Select, Row, Col } from 'antd';
 import { useModel } from 'umi';
 
+const validateMessages = {
+  required: '${label} không được để trống!',
+  types: {
+    number: '${label} phải là số!',
+    email: '${label} không đúng định dạng email!',
+  },
+  number: {
+    min: '${label} phải lớn hơn hoặc bằng ${min}',
+    max: '${label} phải nhỏ hơn hoặc bằng ${max}',
+  },
+};
 
 const FormThongTinVanBang = () => {
   const { data, row, isEdit, setVisible, formFields, getNextSoVaoSo, saveData } = useModel('thongTinVanBang');
