@@ -54,6 +54,21 @@
 		component: './QuanLyHocTap',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/quanlymonhoc',
+		name: 'QuanLyMonHoc',
+		component: './QuanLyMonHoc',
+		icon: 'ArrowsAltOutlined',
+	},
+	
+	// Quản lý sổ văn bằng
+	{
+		name: 'QuanLySoVanBang',
+		path: '/quan-ly-so-van-bang',
+		icon: 'BookOutlined',
+		component: './QuanLySoVanBang',
+	},
+
 
 	// DANH MUC HE THONG
 	// {
@@ -107,4 +122,6 @@
 	{
 		component: './exception/404',
 	},
-];
+	{ path: "/", component: "index", name: "Trang chủ" },
+  { path: "/appointments", component: "appointments/index", name: "Quản lý lịch hẹn" },
+  { path: "/appointments/book", component: "appointments/book", name: "Đặt lịch hẹn" },]

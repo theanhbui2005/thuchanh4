@@ -1,9 +1,11 @@
 import { AppModules, EModuleKey } from '@/services/base/constant';
 
-const ipRoot = APP_CONFIG_IP_ROOT; // ip dev
+// const ipRoot = APP_CONFIG_IP_ROOT; // ip dev
+const ipRoot = 'https://api.example.com/'; // Mock API cho môi trường phát triển
 
 // Ip Chính => Mặc định dùng trong các useInitModel
-const ip3 = ipRoot + 'slink'; // ip dev
+// const ip3 = ipRoot + 'slink'; // ip dev
+const ip3 = 'https://mockapi.ript.vn'; // Mock API cho BieuMauCauHinh
 
 // Ip khác
 const ipNotif = ipRoot + 'notification'; // ip dev
