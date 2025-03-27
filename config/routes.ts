@@ -36,7 +36,12 @@
 		component: './RandomUser',
 		icon: 'ArrowsAltOutlined',
 	},
-
+	{
+		path: '/thong-tin-van-bang',
+		name: 'ThongTinVanBang',
+		component: './ThongTinVanBang',
+		icon: 'ArrowsAltOutlined',
+	},
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
