@@ -1,4 +1,4 @@
-﻿export default [
+export default [
 	{
 		path: '/user',
 		layout: false,
@@ -69,6 +69,12 @@
 		component: './QuanLySoVanBang',
 	},
 
+	{
+		path: '/thong-tin-van-bang',
+		name: 'ThongTinVanBang',
+		component: './ThongTinVanBang',
+		icon: 'ArrowsAltOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {
