@@ -42,6 +42,18 @@
 		component: './Quanlynhanvien',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/quanly-sovanbang',
+		name: 'Quanlysovanbang',
+		component: './Quanlysovanbang',
+		icon: 'ArrowsAltOutlined',
+	},
+	{
+		path: '/quyetdinh-totnghiep',
+		name: 'Quyetdinhtotnghiep',
+		component: './Quyetdinhtotnghiep',
+		icon: 'ArrowsAltOutlined',
+	},
 
 	// DANH MUC HE THONG
 	// {

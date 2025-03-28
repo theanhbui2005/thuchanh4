@@ -11,7 +11,7 @@ declare module Employee {
   declare module Service {
 	export interface Record {
 	  id: number;
-	  name: string;
+	  name: string;	
 	  price: number;
 	  duration: number;
 	  description?: string;
