@@ -42,6 +42,13 @@
 		component: './ThongTinVanBang',
 		icon: 'ArrowsAltOutlined',
 	},
+	{
+		path: '/quan-ly-khoa-hoc',
+		name: 'QuanLyKhoaHoc',
+		component: './QuanLyKhoaHoc',
+		icon: 'ArrowsAltOutlined',
+	},
+
 	// DANH MUC HE THONG
 	// {
 	// 	name: 'DanhMuc',
